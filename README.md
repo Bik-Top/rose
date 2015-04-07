@@ -6,6 +6,6 @@ ruby on self education
 
 >Alternatively, open any project and then File | Reopen | Clear List.
 
-
+  php server ?! 
 1. `creat_file.rb` - create file on hd or server
 2. `puts` -output value
