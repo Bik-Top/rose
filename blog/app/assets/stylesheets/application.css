@@ -1,0 +1,65 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *   #++++++
+ *= require_tree .
+ *= require_self
+ */
+
+h1{
+    color: #800080;
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+    text-align: left;
+    min-width: 50%;
+}
+.show_res{
+    margin: 0 auto;
+    text-align: left;
+    width: 50%;
+}
+.show_res a{
+    width: 45%;
+    margin: 3px 5px;
+    padding: 3px 6px;
+    background: #4ec7ff;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+}
+table tr{
+    line-height: 24px;
+}
+table p>a{
+   padding: 3px 6px;
+    background: #ffe39d;
+    color: #800080;
+    border-radius: 3px;
+}
+table p>a:hover{
+    background: #fffab3;
+    text-decoration: none;
+    color: #800080;
+}
+.back_link{
+   padding: 3px 6px;
+    background: #4ec7ff;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+}
+.back_link:hover{
+    background: #07e2ff;
+    text-decoration: none;
+    color: #fff;
+}

@@ -1,0 +1,78 @@
+            // Place all the styles related to the Products controller here.
+            // They will automatically be included in application.css.
+            // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@mixin color_constructor($read, $green, $blue){
+  background:rgba($read, $green, $blue, .999);
+}
+@mixin box_shadow ($x, $y, $r, $c, $read, $green, $blue, $alfa){
+  box-shadow:$x $y $r $c rgba($read, $green, $blue, $alfa);
+}
+
+
+.products {
+  table {
+    border-collapse: collapse;
+  }
+
+  table tr td {
+    padding: 5px;
+    vertical-align: top;
+  }
+
+  .list_image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .list_description {
+    width: 60%;
+
+    dl {
+      margin: 0;
+    }
+
+    dt {
+      color: #244;
+      font-weight: bold;
+      font-size: larger;
+    }
+
+    dd {
+      margin: 0;
+    }
+  }
+
+  .list_actions {
+    font-size: x-small;
+    text-align: right;
+    padding-left: 1em;
+    a{
+      @include color_constructor(255,241,229);
+      @include box_shadow(-1px, 1px, 2px, 0, 218, 218, 218, 1 );
+      padding: 0 8px;
+      margin-top: 6px;
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 3px;
+      &:hover{
+        @include color_constructor(0,0,0);
+        border-radius: 3px;
+      }
+    }
+
+
+  }
+
+  .list_line_even {
+    background: #e0f8f8;
+  }
+
+  .list_line_odd {
+    background: #fffab3;
+  }
+  p{
+    @include color_constructor(244,244,244);
+  }
+}

@@ -1,0 +1,25 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$wiol: #f0f;
+@mixin color_constructor($read, $green, $blue){
+  background:rgba($read, $green, $blue, .999);
+}
+
+.aa{
+  height:30px;
+  width:150px;
+  background:$wiol;
+}
+.bb{
+  height:(30px/2);
+  width:(150px/2);
+  margin:5px;
+  padding:5px;
+  @include color_constructor(0, 255, 0);
+
+  &:hover{
+    @include color_constructor(255, 55, 111);
+    cursor:pointer;
+  }
+}

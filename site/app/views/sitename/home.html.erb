@@ -1,0 +1,21 @@
+<h1>Sitename#home</h1>
+
+<div>
+  <%= @files %>  <br/>
+  <%= %w{ муравей пчела кот собака лось } %>
+</div>
+<h3>проход по массиву:</h3>
+<ul>
+  <% for file in @files %>
+    <li>
+      <%= file %>
+    </li>
+  <% end %>
+</ul>
+
+<%= render 'patern_clock' %>   <!--берет форму из шаблона _patern_clock.erb -->
+
+<%= link_to 'наши работы', sitename_our_work_path %>  |
+<%= link_to 'заказать', sitename_order_path %>        |
+<%= link_to 'контакты', sitename_contacts_path %>
+
