@@ -14,7 +14,12 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
-*.log
+
+
+# Ignore all logfiles and tempfiles.
+/log/*
+!/log/.keep
+/tmp
 
 # Windows shortcuts
 *.lnk
