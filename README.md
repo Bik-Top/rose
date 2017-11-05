@@ -6,12 +6,13 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+`rails server 2.2. -b 127.0.0.1 -p 3000 -e development`
 
 * System dependencies
 
 * Configuration
 
-* Database creation
+* Database creation `rails db:migrate`
 
 * Database initialization
 
